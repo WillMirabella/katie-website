@@ -32,7 +32,7 @@ export default function Home() {
               key={index}
               className="group relative overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
             >
-              <div className="aspect-[3/4] relative bg-accent-light">
+              <div className="aspect-[3/4] relative bg-accent-bright/30">
                 <div className="absolute inset-0 flex items-center justify-center text-foreground/60">
                   <div className="text-center">
                     <div className="w-16 h-16 mx-auto mb-4 bg-primary-light/40 rounded-full flex items-center justify-center">

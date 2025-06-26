@@ -14,10 +14,10 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="bg-card-background shadow-sm border-b border-primary-medium/20">
+    <nav className="bg-primary-medium shadow-sm border-b border-primary-medium/40">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-6">
-          <Link href="/" className="text-2xl font-bold text-foreground">
+          <Link href="/" className="text-2xl font-bold text-white">
             Katie M
           </Link>
           <div className="flex space-x-8">
@@ -27,8 +27,8 @@ const Navigation = () => {
                 href={item.path}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                   pathname === item.path
-                    ? 'text-primary-medium bg-primary-light/20'
-                    : 'text-foreground/80 hover:text-primary-medium hover:bg-primary-light/10'
+                    ? 'text-white bg-accent-bright/60'
+                    : 'text-white/90 hover:text-white hover:bg-accent-light/20'
                 }`}
               >
                 {item.name}

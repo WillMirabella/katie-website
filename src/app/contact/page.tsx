@@ -9,7 +9,7 @@ export default function ContactPage() {
         </p>
       </div>
 
-      <div className="bg-card-background rounded-2xl shadow-sm border border-primary-medium/20 p-8 md:p-12">
+      <div className="bg-accent-light rounded-2xl shadow-sm border border-primary-medium/30 p-8 md:p-12">
         <div className="grid md:grid-cols-2 gap-12">
           <div>
             <h2 className="text-2xl font-semibold text-foreground mb-6">Let&apos;s Connect</h2>
@@ -78,7 +78,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-primary-light/30 to-accent-light/40 rounded-xl p-8">
+          <div className="bg-gradient-to-br from-primary-medium/20 to-accent-bright/30 rounded-xl p-8">
             <h3 className="text-xl font-semibold text-foreground mb-4">
               What I&apos;d Love to Hear About
             </h3>

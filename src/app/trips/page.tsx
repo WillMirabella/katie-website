@@ -24,7 +24,7 @@ export default function TripsPage() {
         {trips.map((trip) => (
           <div
             key={trip.id}
-            className="bg-card-background rounded-2xl shadow-sm border border-primary-medium/20 overflow-hidden hover:shadow-md transition-shadow duration-300"
+            className="bg-accent-light rounded-2xl shadow-sm border border-primary-medium/30 overflow-hidden hover:shadow-md transition-shadow duration-300"
           >
             <div className="p-8">
               <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between">
@@ -48,13 +48,13 @@ export default function TripsPage() {
                     {trip.highlights.slice(0, 3).map((highlight, index) => (
                       <span
                         key={index}
-                        className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-primary-light/60 text-foreground/90"
+                        className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-primary-medium/60 text-white"
                       >
                         {highlight}
                       </span>
                     ))}
                     {trip.highlights.length > 3 && (
-                      <span className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-accent-light/60 text-foreground/80">
+                      <span className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-accent-bright/70 text-foreground/90">
                         +{trip.highlights.length - 3} more
                       </span>
                     )}
