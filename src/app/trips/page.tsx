@@ -1,4 +1,4 @@
-&apos;use client&apos;;
+'use client';
 
 import { useState } from 'react';
 import { trips } from '@/data/trips';
