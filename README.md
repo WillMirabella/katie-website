@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Katie M - Personal Website
+
+A clean, minimal personal website built with Next.js and TailwindCSS, featuring essays, travel stories, and a beautiful image gallery.
+
+## Features
+
+- **Home Page**: Personal introduction with image gallery
+- **Essays**: Blog-style posts with detailed views
+- **Trips**: Travel adventures with expandable details
+- **Contact**: Static contact information with social links
+- **Responsive Design**: Works beautifully on all devices
+- **Modern Styling**: Clean design with custom color palette
+
+## Tech Stack
+
+- **Framework**: Next.js 15 with App Router
+- **Styling**: TailwindCSS v4 with custom color scheme
+- **Typography**: Inter font family
+- **Deployment**: Configured for GitHub Pages with static export
+
+## Color Palette
+
+- Primary Light: `#B1F0F7`
+- Primary Medium: `#81BFDA`
+- Accent Light: `#F5F0CD`
+- Accent Bright: `#FADA7A`
 
 ## Getting Started
 
-First, run the development server:
+### Development
 
 ```bash
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) to view the website.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Build and export static files
+npm run build
+```
 
-## Learn More
+This will generate a static export in the `out/` directory ready for deployment.
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment to GitHub Pages
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is configured for deployment to GitHub Pages using GitHub Actions:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Push your code to the `main` branch
+2. The GitHub Action will automatically build and deploy to GitHub Pages
+3. Make sure to enable GitHub Pages in your repository settings
 
-## Deploy on Vercel
+## Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+├── src/
+│   ├── app/
+│   │   ├── page.tsx          # Home page
+│   │   ├── essays/
+│   │   │   ├── page.tsx      # Essays overview
+│   │   │   └── [slug]/       # Individual essay pages
+│   │   ├── trips/
+│   │   │   └── page.tsx      # Trips page
+│   │   ├── contact/
+│   │   │   └── page.tsx      # Contact page
+│   │   └── layout.tsx        # Root layout
+│   ├── components/
+│   │   └── Navigation.tsx    # Main navigation
+│   └── data/
+│       ├── essays.ts         # Essay content
+│       └── trips.ts          # Trip data
+├── .github/
+│   └── workflows/
+│       └── deploy.yml        # GitHub Actions deployment
+└── public/                   # Static assets
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Customization
+
+### Adding New Essays
+
+Edit `src/data/essays.ts` to add new essay content.
+
+### Adding New Trips
+
+Edit `src/data/trips.ts` to add travel experiences.
+
+### Updating Contact Information
+
+Edit `src/app/contact/page.tsx` to update contact details.
+
+### Adding Real Images
+
+Replace the placeholder images in the home page gallery with actual photos by:
+1. Adding image files to the `public/` directory
+2. Updating the `sampleImages` array in `src/app/page.tsx`
+
+## Next Steps
+
+1. Replace placeholder images with real photos
+2. Update contact information with actual details
+3. Customize essay and trip content
+4. Set up GitHub repository and enable Pages
+5. Push to GitHub to trigger automatic deployment
+
+## License
+
+This project is created for personal use. Feel free to use it as a template for your own website.
