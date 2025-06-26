@@ -33,9 +33,9 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="antialiased">
+      <body className="antialiased bg-background text-foreground">
         <Navigation />
-        <main className="min-h-screen">
+        <main className="min-h-screen bg-background">
           {children}
         </main>
       </body>

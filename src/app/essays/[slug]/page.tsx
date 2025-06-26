@@ -40,15 +40,15 @@ export default async function EssayPage({ params }: EssayPageProps) {
 
       <article className="prose prose-lg max-w-none">
         <header className="not-prose mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl font-bold text-foreground mb-4">
             {essay.title}
           </h1>
           {essay.date && (
-            <p className="text-gray-600 text-lg">{essay.date}</p>
+            <p className="text-foreground/70 text-lg">{essay.date}</p>
           )}
         </header>
 
-        <div className="text-gray-700 leading-relaxed">
+        <div className="text-foreground/80 leading-relaxed">
           {essay.content.split('\n').map((paragraph, index) => {
             if (paragraph.trim() === '') return null;
             return (
@@ -60,7 +60,7 @@ export default async function EssayPage({ params }: EssayPageProps) {
         </div>
       </article>
 
-      <div className="mt-12 pt-8 border-t border-gray-200">
+      <div className="mt-12 pt-8 border-t border-primary-light/30">
         <Link
           href="/essays"
           className="inline-flex items-center text-primary-medium hover:text-primary-medium/80 font-medium transition-colors"
