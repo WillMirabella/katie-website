@@ -16,7 +16,7 @@ export default function EssaysPage() {
         {essays.map((essay) => (
           <article
             key={essay.id}
-            className="bg-white rounded-2xl shadow-sm border border-primary-light/30 p-8 hover:shadow-md transition-shadow duration-300"
+            className="bg-card-background rounded-2xl shadow-sm border border-primary-medium/20 p-8 hover:shadow-md transition-shadow duration-300"
           >
             <div className="flex flex-col h-full">
               <div className="flex-1">
